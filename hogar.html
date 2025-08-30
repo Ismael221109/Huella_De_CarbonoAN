@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogar - Dashboard Ecológico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-btn" onclick="goHome()">← Volver al Inicio</button>
+            <h1>Hogar</h1>
+        </header>
+        
+        <main class="sub-grid">
+            <!-- Barrios -->
+            <div class="sub-card">
+                <h3>Barrios</h3>
+                <button onclick="showRandomImage('barrios')">Ver Imagen</button>
+                <div class="image-container" id="barrios-image"></div>
+            </div>
+
+            <!-- Ciudadelas -->
+            <div class="sub-card">
+                <h3>Ciudadelas</h3>
+                <button onclick="showRandomImage('ciudadelas')">Ver Imagen</button>
+                <div class="image-container" id="ciudadelas-image"></div>
+            </div>
+
+            <!-- Municipio -->
+            <div class="sub-card">
+                <h3>Municipio</h3>
+                <button onclick="showRandomImage('municipio')">Ver Imagen</button>
+                <div class="image-container" id="municipio-image"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

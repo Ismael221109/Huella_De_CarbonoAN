@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudad - Dashboard Ecológico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-btn" onclick="goHome()">← Volver al Inicio</button>
+            <h1>Ciudad</h1>
+        </header>
+        
+        <main class="sub-grid">
+            <!-- Supermercados -->
+            <div class="sub-card">
+                <h3>Supermercados</h3>
+                <button onclick="showRandomImage('supermercados')">Ver Imagen</button>
+                <div class="image-container" id="supermercados-image"></div>
+            </div>
+
+            <!-- Centros Comerciales -->
+            <div class="sub-card">
+                <h3>Centros Comerciales</h3>
+                <button onclick="showRandomImage('centros-comerciales')">Ver Imagen</button>
+                <div class="image-container" id="centros-comerciales-image"></div>
+            </div>
+
+            <!-- Colegios -->
+            <div class="sub-card">
+                <h3>Colegios</h3>
+                <button onclick="showRandomImage('colegios')">Ver Imagen</button>
+                <div class="image-container" id="colegios-image"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

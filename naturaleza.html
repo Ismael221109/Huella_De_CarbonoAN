@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturaleza - Dashboard Ecológico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-btn" onclick="goHome()">← Volver al Inicio</button>
+            <h1>Naturaleza</h1>
+        </header>
+        
+        <main class="sub-grid">
+            <!-- Desierto de Zabrinsky -->
+            <div class="sub-card">
+                <h3>Desierto de Zabrinsky</h3>
+                <button onclick="showRandomImage('desierto-zabrinsky')">Ver Imagen</button>
+                <div class="image-container" id="desierto-zabrinsky-image"></div>
+            </div>
+
+            <!-- Laguna La Herrera -->
+            <div class="sub-card">
+                <h3>Laguna La Herrera</h3>
+                <button onclick="showRandomImage('laguna-herrera')">Ver Imagen</button>
+                <div class="image-container" id="laguna-herrera-image"></div>
+            </div>
+
+            <!-- Humedal El Gualí -->
+            <div class="sub-card">
+                <h3>Humedal El Gualí</h3>
+                <button onclick="showRandomImage('humedal-guali')">Ver Imagen</button>
+                <div class="image-container" id="humedal-guali-image"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

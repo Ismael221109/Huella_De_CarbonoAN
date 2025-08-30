@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte - Dashboard Ecológico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-btn" onclick="goHome()">← Volver al Inicio</button>
+            <h1>Transporte</h1>
+        </header>
+        
+        <main class="sub-grid">
+            <!-- Transporte de Carga -->
+            <div class="sub-card">
+                <h3>Transporte de Carga</h3>
+                <button onclick="showRandomImage('transporte-carga')">Ver Imagen</button>
+                <div class="image-container" id="transporte-carga-image"></div>
+            </div>
+
+            <!-- Proyectos a Futuro -->
+            <div class="sub-card">
+                <h3>Proyectos a Futuro</h3>
+                <button onclick="showRandomImage('proyectos-futuro')">Ver Imagen</button>
+                <div class="image-container" id="proyectos-futuro-image"></div>
+            </div>
+
+            <!-- Transporte de Personas -->
+            <div class="sub-card">
+                <h3>Transporte de Personas</h3>
+                <button onclick="showRandomImage('transporte-personas')">Ver Imagen</button>
+                <div class="image-container" id="transporte-personas-image"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

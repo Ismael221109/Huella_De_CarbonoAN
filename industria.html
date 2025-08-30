@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industria - Dashboard Ecológico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-btn" onclick="goHome()">← Volver al Inicio</button>
+            <h1>Industria</h1>
+        </header>
+        
+        <main class="sub-grid">
+            <!-- Transnacional -->
+            <div class="sub-card">
+                <h3>Transnacional</h3>
+                <button onclick="showRandomImage('transnacional')">Ver Imagen</button>
+                <div class="image-container" id="transnacional-image"></div>
+            </div>
+
+            <!-- E-commerce -->
+            <div class="sub-card">
+                <h3>E-commerce</h3>
+                <button onclick="showRandomImage('e-commerce')">Ver Imagen</button>
+                <div class="image-container" id="e-commerce-image"></div>
+            </div>
+
+            <!-- Local -->
+            <div class="sub-card">
+                <h3>Local</h3>
+                <button onclick="showRandomImage('local')">Ver Imagen</button>
+                <div class="image-container" id="local-image"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

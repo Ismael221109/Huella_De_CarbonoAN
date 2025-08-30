@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huella de carbono</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Huella de carbono</h1>
+        </header>
+        
+        <main class="main-grid">
+            <!-- Bonificaciones -->
+            <div class="main-card bonificaciones">
+                <h2>Bonificaciones</h2>
+                <button onclick="showRandomImage('bonificaciones')">Ver Imagen</button>
+                <div class="image-container" id="bonificaciones-image"></div>
+            </div>
+
+            <!-- Eventos Globales -->
+            <div class="main-card eventos-globales">
+                <h2>Eventos Globales</h2>
+                <button onclick="showRandomImage('eventos-globales')">Ver Imagen</button>
+                <div class="image-container" id="eventos-globales-image"></div>
+            </div>
+
+            <!-- Penalizaciones -->
+            <div class="main-card penalizaciones">
+                <h2>Penalizaciones</h2>
+                <button onclick="showRandomImage('penalizaciones')">Ver Imagen</button>
+                <div class="image-container" id="penalizaciones-image"></div>
+            </div>
+
+            <!-- Huella -->
+            <div class="main-card huella">
+                <h2>Huella</h2>
+                <div class="huella-grid">
+                    <button class="huella-btn personal" onclick="location.href='personal.html'">Personal</button>
+                    <button class="huella-btn industria" onclick="location.href='industria.html'">Industria</button>
+                    <button class="huella-btn naturaleza" onclick="location.href='naturaleza.html'">Naturaleza</button>
+                    <button class="huella-btn transporte" onclick="location.href='transporte.html'">Transporte</button>
+                    <button class="huella-btn ciudad" onclick="location.href='ciudad.html'">Ciudad</button>
+                    <button class="huella-btn hogar" onclick="location.href='hogar.html'">Hogar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

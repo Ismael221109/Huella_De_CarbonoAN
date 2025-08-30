@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal - Dashboard Ecológico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-btn" onclick="goHome()">← Volver al Inicio</button>
+            <h1>Personal</h1>
+        </header>
+        
+        <main class="sub-grid">
+            <!-- Alimentación -->
+            <div class="sub-card">
+                <h3>Alimentación</h3>
+                <button onclick="showRandomImage('alimentacion')">Ver Imagen</button>
+                <div class="image-container" id="alimentacion-image"></div>
+            </div>
+
+            <!-- Servicios Públicos -->
+            <div class="sub-card">
+                <h3>Servicios Públicos</h3>
+                <button onclick="showRandomImage('servicios-publicos')">Ver Imagen</button>
+                <div class="image-container" id="servicios-publicos-image"></div>
+            </div>
+
+            <!-- Prendas de Vestir -->
+            <div class="sub-card">
+                <h3>Prendas de Vestir</h3>
+                <button onclick="showRandomImage('prendas-vestir')">Ver Imagen</button>
+                <div class="image-container" id="prendas-vestir-image"></div>
+            </div>
+
+            <!-- Medios de Transporte -->
+            <div class="sub-card">
+                <h3>Medios de Transporte</h3>
+                <button onclick="showRandomImage('medios-transporte')">Ver Imagen</button>
+                <div class="image-container" id="medios-transporte-image"></div>
+            </div>
+
+            <!-- Dispositivos Electrónicos -->
+            <div class="sub-card">
+                <h3>Dispositivos Electrónicos</h3>
+                <button onclick="showRandomImage('dispositivos-electronicos')">Ver Imagen</button>
+                <div class="image-container" id="dispositivos-electronicos-image"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
